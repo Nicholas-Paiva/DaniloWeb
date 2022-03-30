@@ -5,9 +5,13 @@ function App(){
   const [name, setName] = useState("")
   const [image, setImage] = useState("")
   const [color, setColor] = useState("")
+  const [mesa, setMesa] = useState("")
+  //Idade, Nacionalidade, Ocupação, História
+  //Força, Agilidade, Percepcao, HabManuais, Intelecto, HabSociais
+  // Contatos
   
   const jsonData = {
-    name, image, color
+    name, image, color, mesa
    };
 
    function download(content, fileName, contentType) {
@@ -31,6 +35,8 @@ function App(){
         <input type="text" id="image" value={image} onChange={ (event) => setImage(event.target.value)}/><br/>
         <label htmlFor="color">Cor</label><br/>
         <input type="text" id="color" value={color} onChange={ (event) => setColor(event.target.value)}/><br/>
+        <label htmlFor="mesa">Mesa</label><br/>
+        <input type="text" id="mesa" value={color} onChange={ (event) => setMesa(event.target.value)}/><br/>
         <button onClick={onDownload}>Clica aqui puta</button>
       </form>
     </div>
