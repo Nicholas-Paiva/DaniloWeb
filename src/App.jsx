@@ -36,7 +36,7 @@ function App(){
         <label htmlFor="color">Cor</label><br/>
         <input type="text" id="color" value={color} onChange={ (event) => setColor(event.target.value)}/><br/>
         <label htmlFor="mesa">Mesa</label><br/>
-        <input type="text" id="mesa" value={color} onChange={ (event) => setMesa(event.target.value)}/><br/>
+        <input type="text" id="mesa" value={mesa} onChange={ (event) => setMesa(event.target.value)}/><br/>
         <button onClick={onDownload}>Clica aqui puta</button>
       </form>
     </div>
